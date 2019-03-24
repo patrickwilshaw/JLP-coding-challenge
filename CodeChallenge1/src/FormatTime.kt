@@ -16,7 +16,7 @@ fun formatTime(seconds: Int = 0): String {
             formattedTime += formatUnit(noUnits, unitTime)
         }
     }
-    //Remove the last comma and change the penultimate if applicable to an 'and' finally put the space back after commas
+    //Remove the last comma and change the penultimate comma if applicable to an 'and' finally put the space back after commas
     var position = formattedTime.lastIndexOf(",")
     if (position != -1) {
         formattedTime = formattedTime.replaceRange(position, position + 1, "")
