@@ -28,14 +28,14 @@ fun formatTime(seconds: Int = 0): String {
     return formattedTime.replace(",", ", ");
 }
 
-fun formatUnit(quantity: Int, Unit: TimeUnit): String {
-    if (quantity == 0) {
+fun formatUnit(noUnits: Int, Unit: TimeUnit): String {
+    if (noUnits == 0) {
         return ""
     }
-    if (quantity > 1) {
-        return quantity.toString() + " " + Unit.unitDescPlural + ","
+    if (noUnits > 1) {
+        return noUnits.toString() + " " + Unit.unitDescPlural + ","
     } else {
-        return quantity.toString() + " " + Unit.unitDescSingular + ","
+        return noUnits.toString() + " " + Unit.unitDescSingular + ","
     }
 }
 
