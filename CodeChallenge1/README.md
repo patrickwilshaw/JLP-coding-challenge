@@ -39,3 +39,4 @@ If the time is zero then return a string containing “none”.
 To run:
 
 Run in IntelliJ specifying an integer which represents time in the Program Arguments (Configurations from the Run menu)
+Java SDK version 8 minimum
